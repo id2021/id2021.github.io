@@ -1,0 +1,224 @@
+/*sy1,sy2*/
+.title{
+	text-align: center;
+	color: red;
+}
+.cap{
+
+	color: green;
+}
+.duanluo{
+	text-indent: 2em;
+	line-height: 23px;
+        
+}
+.bgc{
+	background-color: rgb(255,251,240);/*乳白色*/
+}
+
+
+
+
+/*sy2*/
+img{
+
+        float: right;
+        border-style: solid;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+/*sy3*/
+.nav {
+        height: 75px;
+    }
+.nav li {
+    	list-style: none;
+        float: left;
+        margin: 0 10px;
+        padding-top: 21px;
+        width:100px;  
+    }
+.nav a{
+        display: block;
+        background: url(../img/sy3-3-1.png);
+        color: #fff;
+        font-size: 14px;
+        line-height: 33px;
+        padding-left: 15px;
+        text-decoration: none;
+}
+.nav li a:hover {  /* 鼠标经过a a变换背景 */
+        background-image: url(../img/sy3-3-2.png);
+    }
+
+
+/*sy3-4*/
+
+.sy4{
+        background-color: #fbfbfb;
+        font-size: 18px;
+}
+.table{
+        width: 600px;
+        margin: 0 auto;
+        border: black 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+}
+
+.caption{
+        font-weight: bold;
+        margin-top: 50px;
+        line-height: 30px;
+}
+th{
+        border: black 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #328AA4;
+        color:#fff;
+}
+td{
+        border: black 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+}
+tr{
+        border: black 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: #E5F1F4;
+}
+table tr:nth-child(even){
+    background-color: #FDFBCC;
+}
+
+/*sy3-5*/
+.form{
+
+        width: 500px;
+        height: 600px;
+}
+.login{    /*登录框容器的样式*/
+        margin:0 auto;  /*容器水平居中对齐*/
+        width:280px;
+        padding:14px;
+        border:2px dashed #b7ddf2;   /*2px虚线淡蓝色边框*/
+        background:#ebf4fb;
+        }
+.login *{        /*容器中所有元素的样式*/
+        margin:0px;
+        padding:0px;
+        font-family:"宋体";
+        font-size:12px;
+        line-height:1.5em;
+        }
+.login h2{       /*容器中2级标题的样式*/
+        text-align:center;    /*文字水平居中对齐*/
+        font-size:18px;
+        font-weight:bold;      /*字体加粗*/
+        margin-bottom:10px;
+        padding-bottom:5px;
+        border-bottom:1px solid #b7ddf2;  /*下边框为1px实线淡蓝色边框*/
+        }
+.content{    /*容器内容区域的样式*/
+                padding:5px;
+        }
+.frm_cont{   /*内容区域中提示文字的样式*/
+                margin-bottom:8px;
+                font-weight: bold;
+        }
+.username input,.password input{    /*用户名文本域和密码域的样式*/
+                width:180px;
+                height:18px;
+                padding:2px 0px 2px 18px;    /*文本框左内边距18px以便背景图像预留显示空间*/
+                border:1px solid #aacfe4;    /*1px实线淡蓝色边框*/
+        }
+.login .username input{           /*用户名文本域背景图像*/
+                background:#fff url("../img/用户.png") no-repeat left center;
+                background-size: 18px;
+        }
+.login .password input{
+                background:#fff url("../img/锁.png") no-repeat left center;
+                background-size: 18px;
+        }
+.btns{        /*按钮的样式*/
+                text-align: center;   /*文字水平居中对齐*/
+        }
+
+/*sy6*/
+.sy6body{
+        font-family: arial;
+        font-size: 12px;    /*文字大小为12px*/
+        padding:0px;        /*内边距为0px*/
+        margin:0px;         /*外边距为0px*/
+}
+a{
+        text-align: center;     /*文字居中显示*/
+        text-decoration: none;  /*链接无修饰*/
+}
+a:link{
+        color: black;           /*设置字体颜色为黑色*/
+        text-decoration: none;  /*无文本修饰效果*/
+}
+a:hover{
+        color:blue;
+        text-decoration:none;
+}
+img{
+        border:1px solid #ccc;   /*图像边框为1px浅灰色实线*/
+        width:193px;             /*设置图像宽度为193px*/
+        height:128px;            /*设置图像高度为128px*/
+}
+em{
+        color:#5BB9EE;       /*淡蓝色文字*/
+        font-weight:bold;    /*设置文字为粗体*/
+}
+a span{
+        color:black;        /*设置字体为黑色*/
+}
+a:hover em{
+        color:red;             /*设置字体颜色为红色*/
+        text-decoration:none;  /*无文本修饰效果*/
+}
+a:hover img{
+        border-color:red;      /*设置图片边框颜色为红色*/
+}
+.main{
+        border:2px solid #ccc; /*边框为2px的灰色实线*/
+        width:840px;
+}
+.matter4{
+        width:100%           /*容器宽度占父元素100%*/
+        margin:auto;
+        margin-top:8px;     /*上边距为8px*/
+}
+.content{               /*设置内容区域的样式*/ 
+        overflow:hidden;    /*溢出隐藏*/
+        padding:6px;        /*左内边距为6px*/
+}
+
+.tp3{                   /*设置内容区域右侧单个图像容器的样式*/
+        width:197px;       
+        margin:5px;         /*上、右、下、左外边距都为5px*/
+        float:left;         /*向左浮动*/
+        display:inline;     /*显示为行级元素*/
+}
+
+
+
+
+
+
+
+
+

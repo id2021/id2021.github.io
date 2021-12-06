@@ -1,0 +1,65 @@
+*{
+	margin:100px auto;
+	padding: 0;
+}
+
+.border {
+	border: 1px solid #4fe84f;
+	border-collapse: collapse;
+}
+.border td
+{
+	border: 1px solid #4fe84f;
+}
+/*实验1 */
+.d tr:nth-child(2n+1){
+	background-color: #EAF2D3;
+}/*奇数*/
+.z tr:first-child{
+	background-color: #A7C942;
+}/*第一个*/
+
+
+
+.bor {
+	width: 700px;
+	border: 10px solid;
+	border-color: #dedede #a7a5a5 #a7a5a5 #dedede;
+}
+.bor td
+{
+	border: 1px #dedede;
+}
+.thcolor{
+	background-color: #07ade6;
+}
+.onetofour{
+	background-color: #2bb5c0;
+}
+.thelast{
+	background-color: #f6f50b8f;
+}
+
+
+
+.tabo{
+	border: 1px solid #4fe84f;
+	width: 440px;
+	border-spacing: 0;
+
+}
+img
+{
+	height: 110px;
+	width: 100px;
+	margin: 5px;
+	border: 1px solid ;
+}
+
+.first_tr{
+	background-color: #4fe84f;
+}
+.align_c
+{
+	text-align: center;
+}

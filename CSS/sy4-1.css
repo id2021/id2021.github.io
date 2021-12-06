@@ -1,0 +1,108 @@
+body{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:left ;
+}
+.box{
+    background-color: darkgray;
+    border: black solid 2px;
+    margin: 0 auto;
+    width: 666px;
+    padding-top: 10px;
+    text-align: left;
+}
+.box p{
+    margin-left: 10px;
+}
+.header{
+    background-color: red;
+    border: gold solid 2px;
+    margin: 10px;
+    padding: 10px 2px;
+}
+.header p{
+    color: gold;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+#logo{
+    background-color:  gold;
+    border: black solid 2px;
+    height: 40px;
+    width: 200px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 10px 20px;
+}
+#logo p{
+    color: black;
+    text-align: center;
+}
+#banner{
+    background-color: blue;
+    border: black solid 2px;
+    height: 40px;
+    line-height: 20 px;
+    width: 300px;
+    margin-left: 55px;
+    display: inline-block;
+    color: #fff;
+}
+
+#menu{
+    background-color: rgba(19, 14, 14, 0.836);
+    border: black solid 2px;
+    line-height: 20px;
+    width: 586px;
+    height: 40px;
+    margin: 10px 20px;
+}
+#menu p{
+    color: #fff;
+    margin-left: 20px;
+}
+#main{
+    background-color: rgb(31, 126, 23);
+    border: gold 2px solid;
+    padding: 10px 2px;
+    margin: 10px;
+}
+#main p{
+
+    color: #fff;
+
+}
+#sidebar{
+    background-color: blue;
+    border: #fff 2px solid;
+    height: 200px;
+    width:160px;
+    display: inline-block;
+    margin: 10px 20px;
+}
+#sidebar p{
+    color: #fff;
+}
+#content{
+    background-color: rgba(48, 178, 201, 0.85);
+    border: #fff 2px solid;
+    height: 200px;
+    width: 350px;
+    display: inline-block;
+    margin-left: 50px;
+}
+#content p{
+    color: #fff;
+}
+#footer{
+    background-color: red;
+    border: gold 2px solid;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px 2px;
+}
+#footer{
+    color: #fff;
+}

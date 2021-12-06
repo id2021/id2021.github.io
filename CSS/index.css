@@ -1,0 +1,500 @@
+/*全局*/
+* {
+        margin: 0;
+        padding: 0;
+    }
+li {
+        list-style: none;
+    }
+body{
+        /*background-image: url(../img/11.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;*/
+        background: linear-gradient(-45deg, #FFD972, #EFA7A7, #FCBCB8, #A7E8BD) 0% 0% / 400% 400%;
+}
+
+
+
+/*导航栏（一级加二级）*/
+/*一级导航栏*/
+.logo {
+        margin-top: 16px;
+        float: left;
+        width: 10%;
+        height: 64px;
+        background: url(../img/logo.png) 20px 0 no-repeat;
+        }
+.nav {
+        background-color: rgba(0 ,0 ,0, 0.85);
+        height: 80px;
+        margin: 0 auto;
+      }
+/*二级导航栏*/
+.sub_nav {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0 ,0 ,0, 0.7);
+        
+        overflow: hidden;
+      }
+.nav ul {
+        width: 90%;
+        float: left;
+        margin-left: 0px;
+      }
+.nav li {
+        width: 10%;
+        float: left;
+      }
+.nav a {
+        display: block;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        color: #c9c9dd;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: center;
+      }
+.nav ul a:hover {
+        color: #e4b653;/*#e4b653*/
+        background: url(../img/sy3-3-2.png) 0 0 no-repeat;
+      }
+
+.main_nav:hover .sub_nav{
+        height: 300px;
+        transition: height 1s;
+        z-index: 2;
+      }
+.sub_nav ul {
+        margin-top: 16px;
+        width: 90%;
+        float: left;
+        margin-left: 10%;
+      }
+.sub_nav li {
+        width: 10%;
+        float: left;
+        padding: 2px 0 0;
+        text-align: center;
+      }
+.sub_nav a{
+        display: block;
+        width: 100%;
+        height: 40px;
+        color: #c9c9dd;
+        font-size: 14px;
+        text-decoration: none;
+}
+.sub_nav a:hover {
+        color: #e4b653;
+      }
+
+
+ 
+
+
+
+/*一些我的信息（mebox+2个cmd窗口）*/
+#box2 {
+    /* background-color: red; */
+    width: 100%;
+    /*height: 100px;*/
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+/*mebox()*/
+.meBox {
+    float: left;
+    width: 20rem;
+    height: 25rem;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 10%;
+    border-radius: 2%;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.meBox:hover {
+    width: 21rem;
+    height: 26rem;
+    margin: 95px 0 0 9.5%;
+}
+
+.headPhoto {
+    width: 8rem;
+    height: 8rem;
+    background: url(../img/pandas.png) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    top: -15%;
+    left: 50%;
+    margin-left: -4rem;
+    transition: all 0.6s;
+}
+
+.meBox:hover .headPhoto {
+    width: 9rem;
+    height: 9rem;
+    margin: -0.5rem 0 0 -4.5rem;
+    transform: rotate(360deg);
+}
+
+.headPhoto:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.meBox-title {
+    width: auto;
+    margin: 0 auto;
+}
+@keyframes typing {
+    from {
+        width: 0px;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.meBox-title p {
+    font-size: 1.2rem;
+    border-right: .1em solid;
+    width: 12ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(60,end),blink-caret .3s step-end infinite alternate;
+    margin: -30px 0 0 90px;
+    transition: all 0.4s;
+}
+
+.meBox:hover .meBox-title p {
+    font-size: 1.3rem;
+}
+
+.meBox-title .line {
+    width: 80%;
+    height: 2px;
+    background-image: linear-gradient(to left, #3498db, #2980b9);
+    margin: 5% 0 0 10%;
+}
+
+@keyframes meBox-text {
+    0% {
+        transform: translateY(50px);
+        color: white;
+    }
+
+    100% {
+        transform: translateY(0);
+        color: rgb(70, 70, 70);
+    }
+}
+
+.meBox-text {
+    width: 80%;
+    height: 45%;
+    overflow: hidden;
+    text-align: left;
+    color: rgb(70, 70, 70);
+    animation-name: meBox-text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    margin: 5% 0 0 10%;
+    transition: all 0.3s;
+}
+
+.meBox-text p {
+    margin-top: 5px;
+}
+
+.meBox:hover .meBox-text {
+    font-size: 1.05rem;
+}
+
+.meBox-Button {
+    width: 100%;
+}
+
+.meBox-Button a {
+    /*display: inline-block;*/
+    float: left;
+    width: 158px;
+    height: 50px;
+    margin-top: 13px;
+    line-height: 50px;
+    text-decoration: none;
+    color: gray;
+    transition: all 0.3s;
+}
+
+.meBox-Button a:hover {
+    color: rgb(0, 132, 255);
+    font-size: 1.2rem;
+}
+
+.meBox:hover .meBox-Button a {
+    width: 165px;
+    margin-top: 10px;
+}
+
+
+
+
+/*cmd窗口*/
+#cmdBox {
+    width: 710px;
+    height: 550px;
+    float: right;
+    margin-right: 5%;
+    /* background-color: green; */
+}
+
+.cmd {
+    width: 600px;
+    height: 400px;
+    border-radius: 10px 10px 5px 5px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s;
+    font-size: 14px;
+    color: rgb(88, 89, 92);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.cmd:hover {
+    width: 610px;
+    height: 410px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: -5px 0 0 -5px;
+    z-index: 1;
+}
+
+.cmd .title {
+    width: 100%;
+    height: 25px;
+    background-image: linear-gradient(to top, rgb(184, 184, 184), white);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.cmd .title span {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    /*background-color: red;*/
+}
+.cmd .click {
+    margin-left: 10px;
+    float: left;
+}
+
+.cmd .click div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 8px 0 0 10px;
+    float: left;
+}
+
+.cmd .click .red {
+    background-color: #ff1b22;
+    box-shadow: 0 0 1px #ff1b22;
+}
+
+.cmd .click .red:hover {
+    background-color: #ff6268;
+    box-shadow: 0 0 3px #ff1b22;
+}
+
+.cmd .click .yellow {
+    background-color: #ffaf00;
+    box-shadow: 0 0 1px #ffaf00;
+}
+
+.cmd .click .yellow:hover {
+    background-color: #ffd373;
+    box-shadow: 0 0 3px #ffaf00;
+}
+
+.cmd .click .green {
+    background-color: #00931a;
+    box-shadow: 0 0 1px #00931a;
+}
+
+.cmd .click .green:hover {
+    background-color: rgb(0, 196, 36);
+    box-shadow: 0 0 3px #00931a;
+}
+
+.cmdText {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.cmd2 {
+    position: relative;
+    top: -280px;
+    left: 100px;
+}
+
+.cmd2 .cmdText .ul {
+    margin-left: 15px;
+}
+
+.cmd2 .cmdText .ul a {
+    text-decoration: none;
+    color: rgb(88, 89, 92);
+}
+
+.cmd2 .cmdText .ul a:hover {
+    color: rgb(0, 132, 255);
+}
+
+
+
+/*适应不同大小的屏幕*/
+@media screen and (max-width: 1250px)
+{
+    .meBox {
+        margin-left: 3%;
+    }
+
+    .meBox:hover {
+        width: 21rem;
+        height: 26rem;
+        margin: 95px 0 0 2.5%;
+    }
+    
+    #cmdBox {
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 1110px)
+{
+    .meBox {
+        float: none;
+        margin: 100px auto 100px;
+    }
+
+    .meBox:hover {
+        width: 21rem;
+        height: 26rem;
+        margin: 95px auto 95px;
+    }
+    
+    #cmdBox {
+        float: none;
+        margin: 0 auto 100px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .meBox {
+        width: 300px;
+    }
+
+    .meBox:hover {
+        width: 300px;
+        height: 25rem;
+        margin: 100px auto 100px;
+    }
+    
+    .meBox-Button a:hover {
+        color: rgb(0, 132, 255);
+    }
+    
+    .meBox:hover .meBox-Button a {
+        width: 150px;
+        margin-top: 0;
+    }
+    
+    .meBox:hover .meBox-title p {
+        font-size: 1.2rem;
+    }
+    
+    .meBox:hover .headPhoto {
+        width: 8rem;
+        height: 8rem;
+        margin: -0.5rem 0 0 -4rem;
+        transform: rotate(360deg);
+    }
+    
+    .meBox:hover .meBox-text {
+        font-size: 1rem;
+    }
+    
+    .meBox-Button a {
+        width: 150px;
+    }
+    
+    #cmdBox {
+        width: 100%;
+        height: 850px;
+    }
+    
+    .cmd {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .cmd2 {
+        position: relative;
+        top: 20px;
+        left: 0;
+    }
+    
+    .cmd:hover {
+        width: 90%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        margin: 0 auto;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#box3{
+    position: relative;
+    width: 100%;
+}
+.Talkandcomment{
+    float: left;
+    width: 80%;
+    position: absolute;
+    margin-left: 10%;
+    /*background-color: white;*/
+}
+#artitalk_main{
+    
+    margin: 10px auto;
+}
+.shuoshuo_text,
+.shuoshuo_inputs
+{
+    border-style:solid!important;
+    border-width:4px!important;
+}
+
+
+
+
