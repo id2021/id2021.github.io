@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>do you love me ?</title>
+    <style type="text/css">
+        h1{
+            position:absolute; 
+            left:220px; 
+            top:175px; 
+            width:auto; 
+            height:210px;
+           	font-family: "宋体" ;
+        }
+        #yes{
+            position:absolute;  
+            top:235px; 
+            width:210px; 
+            height:210px;
+            left: 275px;
+        }
+        #no{
+            position:absolute;  
+            top:235px; 
+            width:210px; 
+            height:210px;
+            left:360px;
+        }
+    </style>
+    
+    <script type="text/javascript">
+        let count=0;
+        function f1()
+        {
+            alert("thankyou")
+        }
+        function f()
+        {
+            let target=document.getElementById("no");
+            target.style.top = parseInt(Math.random()*(500)+200)+"px";
+            //生成随机数范围[699,200]
+            target.style.left =parseInt(Math.random()*(800)+200)+"px";
+            count++;
+            if(count===5){ 
+                //五次之后
+                document.body.innerHTML = "";
+                alert("原来是这样呀！！！那再见吧");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1 >Do you love me?</h1>
+<div id="yes">
+    <input type="button" value=" YES " onclick="f1()" />
+</div>
+<div id="no">
+    <input type="button" value="  NO  " onmouseover="f()" />
+</div>
+<footer style="position: fixed;right: 20px;bottom: 30px;height: 43px;width: 100px;border: solid;">
+    <a href="04.html">
+        <img src="https://pic.imgdb.cn/item/61aee6bf2ab3f51d9165f61a.png">
+    </a>
+</footer>
+</body>
+</html>

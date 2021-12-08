@@ -20,7 +20,7 @@
 
 
 /*sy2*/
-img{
+.img2{
 
         float: right;
         border-style: solid;
@@ -108,11 +108,11 @@ table tr:nth-child(even){
         width: 500px;
         height: 600px;
 }
-.login{    /*登录框容器的样式*/
-        margin:0 auto;  /*容器水平居中对齐*/
+.login{    
+        margin:0 auto;  
         width:280px;
         padding:14px;
-        border:2px dashed #b7ddf2;   /*2px虚线淡蓝色边框*/
+        border:2px dashed #b7ddf2;   
         background:#ebf4fb;
         }
 .login *{        /*容器中所有元素的样式*/
@@ -122,26 +122,26 @@ table tr:nth-child(even){
         font-size:12px;
         line-height:1.5em;
         }
-.login h2{       /*容器中2级标题的样式*/
-        text-align:center;    /*文字水平居中对齐*/
+.login h2{       
+        text-align:center;   
         font-size:18px;
-        font-weight:bold;      /*字体加粗*/
+        font-weight:bold;     /
         margin-bottom:10px;
         padding-bottom:5px;
-        border-bottom:1px solid #b7ddf2;  /*下边框为1px实线淡蓝色边框*/
+        border-bottom:1px solid #b7ddf2;  
         }
-.content{    /*容器内容区域的样式*/
+.content{    
                 padding:5px;
         }
-.frm_cont{   /*内容区域中提示文字的样式*/
+.frm_cont{   
                 margin-bottom:8px;
                 font-weight: bold;
         }
 .username input,.password input{    /*用户名文本域和密码域的样式*/
                 width:180px;
                 height:18px;
-                padding:2px 0px 2px 18px;    /*文本框左内边距18px以便背景图像预留显示空间*/
-                border:1px solid #aacfe4;    /*1px实线淡蓝色边框*/
+                padding:2px 0px 2px 18px;    
+                border:1px solid #aacfe4;    
         }
 .login .username input{           /*用户名文本域背景图像*/
                 background:#fff url("../img/用户.png") no-repeat left center;
@@ -158,59 +158,59 @@ table tr:nth-child(even){
 /*sy6*/
 .sy6body{
         font-family: arial;
-        font-size: 12px;    /*文字大小为12px*/
-        padding:0px;        /*内边距为0px*/
-        margin:0px;         /*外边距为0px*/
+        font-size: 12px;   
+        padding:0px;       
+        margin:0px;        
 }
 a{
-        text-align: center;     /*文字居中显示*/
-        text-decoration: none;  /*链接无修饰*/
+        text-align: center;     
+        text-decoration: none; 
 }
 a:link{
-        color: black;           /*设置字体颜色为黑色*/
-        text-decoration: none;  /*无文本修饰效果*/
+        color: black;          
+        text-decoration: none; 
 }
 a:hover{
         color:blue;
         text-decoration:none;
 }
-img{
-        border:1px solid #ccc;   /*图像边框为1px浅灰色实线*/
-        width:193px;             /*设置图像宽度为193px*/
-        height:128px;            /*设置图像高度为128px*/
+div img{
+        border:1px solid #ccc;   
+        width:193px;             
+        height:128px;     
 }
 em{
-        color:#5BB9EE;       /*淡蓝色文字*/
-        font-weight:bold;    /*设置文字为粗体*/
+        color:#5BB9EE;    
+        font-weight:bold;  
 }
 a span{
-        color:black;        /*设置字体为黑色*/
+        color:black;        
 }
 a:hover em{
-        color:red;             /*设置字体颜色为红色*/
-        text-decoration:none;  /*无文本修饰效果*/
+        color:red;            
+        text-decoration:none; 
 }
 a:hover img{
-        border-color:red;      /*设置图片边框颜色为红色*/
+        border-color:red;     
 }
 .main{
-        border:2px solid #ccc; /*边框为2px的灰色实线*/
+        border:2px solid #ccc; 
         width:840px;
 }
 .matter4{
-        width:100%           /*容器宽度占父元素100%*/
+        width:100%           
         margin:auto;
-        margin-top:8px;     /*上边距为8px*/
+        margin-top:8px;    
 }
-.content{               /*设置内容区域的样式*/ 
+.content{               
         overflow:hidden;    /*溢出隐藏*/
-        padding:6px;        /*左内边距为6px*/
+        padding:6px;       
 }
 
-.tp3{                   /*设置内容区域右侧单个图像容器的样式*/
+.tp3{                   
         width:197px;       
-        margin:5px;         /*上、右、下、左外边距都为5px*/
-        float:left;         /*向左浮动*/
+        margin:5px;         
+        float:left;         
         display:inline;     /*显示为行级元素*/
 }
 

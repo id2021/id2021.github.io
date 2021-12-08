@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <!-- CSS 内嵌式和内联式，这次没有外联-->
+    <style type="text/css">
+        td:first-child{
+            width: 100;
+            height: 20;
+            text-align: center;
+        }
+        td:last-child{
+            width: 100;
+            height: 20;
+            text-align: left;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="" method="POST" name='form1'>
+        <table style="border: 1;width: 500;background-color: rgb(0, 183, 255);" align=center border=1>
+            <tr>
+                <td >姓名</td>
+                <td >
+                    <input type='text' name='name' size="12" id="name" maxlength="12" style="border-color: rgb(3, 165, 3);border-style: solid;border-width:1px;">
+                </td>
+            </tr>
+            <tr>
+                <td >密码</td>
+                <td >
+                    <input type='password' name='pass' size="12" id="pass" maxlength="12" style="border-color: rgb(3, 165, 3);border-style: solid;border-width:1px;">
+                </td>
+            </tr>
+            <tr>
+                <td >手机号</td>
+                <td >
+                    <input type="number" name='phone' size="11" style="border-color: rgb(3, 165, 3);border-style: solid;border-width:1px;">
+                </td>
+            </tr>
+            <tr>
+                <td >邮箱</td>
+                <td >
+                    <input type="email" name='email' size='30' style="border-color: rgb(3, 165, 3);border-style: solid;border-width:1px;">
+                </td>
+            </tr>
+            <tr>
+                <td >性别</td>
+                <td >
+                    <input type='radio' name='sex' value='男' style='background-color: rgb(55, 236, 64);'>男
+                    <input type='radio' name='sex' value='女'>女
+                </td>
+            </tr>
+            <tr>
+                <td >技术</td>
+                <td >
+                    <input type='checkbox' name='skill' value='java'>java
+                    <input type='checkbox' name='skill' value='jsp'>jsp
+                    <input type='checkbox' name='skill' value='servlet'>servlet
+                </td>
+            </tr>
+            <tr>
+                <td >网站</td>
+                <td >
+                    <input type='text' name='web' size='30' style="border-color: rgb(3, 165, 3);border-style: solid;border-width:1px;">
+                </td>
+            </tr>
+            <tr>
+                <td >日期</td>
+                <td >
+                    <input type="date" name='date' size='30'>
+                </td>
+            </tr>
+            <tr>
+                <td >喜欢的颜色</td>
+                <td >
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td >国家</td>
+                <td >
+                    <select name='country'>
+                        <option value="--选择国家--">--选择国家--</option>
+                        <option value="中国">中国</option>
+                        <option value="美国">美国</option>
+                        <option value="日本">韩国</option>
+                        <option value="印度">印度</option>
+                        <option value="日本">日本</option>
+                        <option value="俄罗斯">俄罗斯</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td >留言<br>提交</td>
+                <td >
+                    <textarea name='talk' cols='40' rows='4' style="border-color: rgb(3, 165, 3);border-style: solid;border-width:1px;">请输入您的留言信息</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 20;text-align: center;" colspan="2">
+                    <input type="submit" name="submit"  value='提交' style="background-color: rgb(0, 133, 11);color: ghostwhite;">
+                    <input type="reset" name="reset"  value='重写' style="background-color: rgb(0, 133, 11);color: ghostwhite;">
+                    </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

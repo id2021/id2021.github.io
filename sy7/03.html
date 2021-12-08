@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实时计算</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <style>
+        div{
+            width: 300px;
+            border: 2px solid;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+<div id = "app" style="margin:200px 500px">
+    <p>第一个数字 <input type = "text" v-model.number = "num1"></p>
+    <p>第二个数字 <input type = "text" v-model.number = "num2"></p>
+    <p>第三个数字 <input type = "text" v-model.number = "num3"></p>
+    <p>总和:  {{sumNum}}</p>
+    <p>平均数(四舍五入):  {{averageNum}}</p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+                num1 : null,
+                num2 : null,
+                num3 : null,
+        },
+
+        computed :{
+            sumNum: function () {
+                return this.num1 + this.num2 + this.num3;
+            },
+            averageNum: function () {
+                return Math.round(this.sumNum /3);
+            }
+        }
+    })
+</script>
+    <footer style="position: fixed;right: 20px;bottom: 30px;height: 43px;width: 100px;border: solid;">
+        <a href="01.html">
+            <img src="https://pic.imgdb.cn/item/61aee6bf2ab3f51d9165f61a.png">
+        </a>
+    </footer>
+</body>
+</html>

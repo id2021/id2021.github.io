@@ -20,7 +20,7 @@
 }/*第一个*/
 
 
-
+/*sy2*/
 .bor {
 	width: 700px;
 	border: 10px solid;
@@ -41,16 +41,16 @@
 }
 
 
-
+/*sy3*/
 .tabo{
 	border: 1px solid #4fe84f;
 	width: 440px;
 	border-spacing: 0;
 
 }
-img
+tr img
 {
-	height: 110px;
+	height: 100px;
 	width: 100px;
 	margin: 5px;
 	border: 1px solid ;

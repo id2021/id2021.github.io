@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://www.w3school.com.cn/jquery/jquery.js"></script>
+    <!-- 引入jquery  -->
+    <script type="text/javascript">
+    	setTimeout(() => {
+	     	$(function() {
+	     		//5秒后触发该函数
+	          	$('#spinner').fadeOut(1500);
+	          	// #spinner1.5秒消失
+	        })
+    	}, 5000);
+    </script>
+    <style type="text/css">
+    	#spinner {
+			position: fixed;
+			z-index: max;
+			width: 100%;
+			height: 100%;
+			background-image: url(https://s2.loli.net/2021/12/08/inGTVCSLp8cmh3O.gif);
+			margin: 0;
+			padding: 0;
+			}
+    </style>
+	<title></title>
+</head>
+<body>
+	<div id="spinner">
+		<h1 style="text-align :center;color: skyblue;font-family: 宋体;">欢迎来的JS的世界</h1>
+	</div>
+	<p>用JS做的一些东西</p>
+	<ul>
+    	<li><a href="02.html">电灯开关</a></li>
+    	<li><a href="03.html">计算器</a></li>
+        <li><a href="01.html">do you love me ?</a></li>
+        <li><a href="04.html">轮播图</a></li>
+    </ul>
+</body>
+</html>

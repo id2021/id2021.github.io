@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>无缝轮播</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+
+    #wrap {
+      overflow: hidden;
+      position: relative;
+      width: 900px;
+      height: 580px;
+      margin: 20px auto 0;
+    }
+
+    #wrap .img-list {
+      display: flex;
+      position: relative;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease;
+    }
+
+    #wrap .img-list img {
+      width: 900px;
+      display:inline-block;
+    }
+
+    #wrap a {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 20px;
+      height: 70px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      line-height: 70px;
+      text-decoration: none;
+    }
+
+    #wrap a.left {
+      left: 0;
+    }
+
+    #wrap a.right {
+      right: 0;
+    }
+
+    .circle-list {
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 240px;
+      height: 40px;
+      z-index: 8;
+      cursor: pointer;
+    }
+    .circle-list > .circle {
+      margin: 0 5px;
+      width: 30px;
+      height: 25px;
+      background-color: #ecf0f1;
+      border-radius: 50%;
+    }
+
+    .circle-list > .circle.active {
+      background-color: #e74c3c;
+    }
+    .a{
+      position: 10px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center;color: blue;">title</h1>
+    <div id="wrap">
+        <!-- 图片列表 -->
+        <div class="img-list">
+            <img src="https://pic.imgdb.cn/item/61a4acb12ab3f51d9183231c.jpg" />
+            <img src="https://pic.imgdb.cn/item/61a3174c2ab3f51d91a41205.jpg" />
+            <img src="https://pic.imgdb.cn/item/61a4acb12ab3f51d9183231c.jpg" />
+            <img src="https://pic.imgdb.cn/item/61a3174c2ab3f51d91a41205.jpg" />
+            <img src="https://pic.imgdb.cn/item/61a4acb12ab3f51d9183231c.jpg" />
+            <img src="https://pic.imgdb.cn/item/61a4acb12ab3f51d9183231c.jpg" />
+            <img src="https://pic.imgdb.cn/item/61a3174c2ab3f51d91a41205.jpg" />
+        </div>
+
+        <!-- 小箭头 -->
+        <div class="arrow">
+            <a href="javascript:;" class="left"><</a>
+            <a href="javascript:;" class="right">></a>
+        </div>
+
+        <!-- 小圆点 -->
+        <ul class="circle-list">
+            <li class="circle active" data-n="0"></li>
+            <li class="circle" data-n="1"></li>
+            <li class="circle" data-n="2"></li>
+            <li class="circle" data-n="3"></li>
+            <li class="circle" data-n="4"></li>
+            <li class="circle" data-n="5"></li>
+            <li class="circle" data-n="6"></li>
+        </ul>
+        <script type="text/javascript" src="../JS/index.js"></script>
+    </div>
+    <footer style="position: fixed;right: 20px;bottom: 30px;height: 43px;width: 100px;border: solid;">
+        <a href="02.html">
+            <img src="https://pic.imgdb.cn/item/61aee6bf2ab3f51d9165f61a.png">
+        </a>
+    </footer>
+</body>

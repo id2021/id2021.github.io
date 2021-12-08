@@ -14,7 +14,15 @@ body{
         background: linear-gradient(-45deg, #FFD972, #EFA7A7, #FCBCB8, #A7E8BD) 0% 0% / 400% 400%;
 }
 
+/*加载动画*/
+#spinner {
+  position: fixed;
+  z-index: max;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
 
+}
 
 /*导航栏（一级加二级）*/
 /*一级导航栏*/
