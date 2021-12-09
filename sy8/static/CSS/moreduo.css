@@ -103,10 +103,10 @@ main section{
     }
 }
 
-#info{ background: url(img/bg-1.png) fixed; }
+#info{ background: url(https://s2.loli.net/2021/12/09/LrTdoYpMVfqSetW.jpg);/*url(../img/bg2.jpg)*/ fixed; }
 #skills{ background: #f8bd24; }
-#works{ background: url(img/bg-2.png) fixed; }
-#team{ background: url(img/bg-3.png) fixed; }
+#works{ background: url(https://s2.loli.net/2021/12/09/rZWoy2UwQaPTzKF.jpg);/*url(../img/bg1.jpeg)*/ fixed; }
+#team{ background: url(https://s2.loli.net/2021/12/09/nhcVMHqOR5lv2Er.jpg);/*url(../img/bg3.jpg)*/ fixed; }
 
 .title{
     margin-bottom: 1em;
