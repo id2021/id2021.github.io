@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.music{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
 
 /* 0 - 全局
 -------------------------------- */
