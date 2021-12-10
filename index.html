@@ -6,6 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="CSS/index.css">
 	<base target="_blank" />
     <script type="text/javascript" src="JS/加载.js"></script>
+	<style>
+	.mu{
+		    width: 0;
+		    height: 0;
+		    overflow: hidden;
+		}
+	</style>
     <script type="text/javascript" src="https://www.w3school.com.cn/jquery/jquery.js"></script>
     <!-- 引入jquery  -->
     <script type="text/javascript">
@@ -22,7 +29,9 @@
     <!--页面加载动画内容-->
 	    <h1 style="text-align: center;margin-top: 80px;">页面加载中......</h1>
     </div>
-   <audio id="myaudio" src="video/qjzx.mp3" controls="controls" autoplay loop="true" hidden="true" ></audio>
+   <div class="mu">
+        <audio id="myaudio" src="video/qjzx.mp3" controls="controls" autoplay loop="true"></audio>
+    </div>
     <div class="main_nav">
         <!-- 一级导航栏 -->
         <div class="nav">
