@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="music">
-    <audio id="audio" src="../video/qjzx.mp3" controls autoplay loop="true" ></audio>
+    <audio id="audio" src="video/qjzx.mp3" controls autoplay loop="true" ></audio>
 </div>
 <aside class="sidebar">
     <div class="avatar">
@@ -158,7 +158,7 @@
                     </p>
                 </div>
                 <div class="col-m-6 center">
-                    <video id="video" src="static/img/sp.mp4" controls autoplay="false" onclick="f1()"/><!-- static/img/team.png -->
+                    <video id="video" src="static/img/sp.mp4" controls atuplay="false" onclick="f1()"/><!-- static/img/team.png -->
                 </div>
             </div>
         </div>
@@ -168,15 +168,20 @@
     </footer>
 </main>
 
-<script src="static/kico.js"></script>
-<script src="static/moreduo.js"></script>
+<script src="static/JS/kico.js"></script>
+<script src="static/JS/moreduo.js"></script>
 <script type="text/javascript">
     //音乐开关
 var bgm=document.getElementById('audio');
 var sp=document.getElementById('video');
 function f1(){
+    if(bgm.paused)
+    {
+        bgm.play();
+    }
+    else{
         bgm.pause();
-  
+    };
 };
 </script>
 </body>
