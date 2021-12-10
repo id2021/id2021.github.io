@@ -158,7 +158,7 @@
                     </p>
                 </div>
                 <div class="col-m-6 center">
-                    <video id="video" src="static/img/sp.mp4" controls autoplay="false"/><!-- static/img/team.png -->
+                    <video id="video" src="static/img/sp.mp4" controls autoplay="false" onclick="f1()"/><!-- static/img/team.png -->
                 </div>
             </div>
         </div>
@@ -174,9 +174,15 @@
     //音乐开关
 var bgm=document.getElementById('audio');
 var sp=document.getElementById('video');
-if(!sp.paused){
-    bgm.pause();
-}
+function f1(){
+    if(bgm.paused)
+    {
+        bgm.play();
+    }
+    else{
+        bgm.pause();
+    };
+};
 </script>
 </body>
 </html>
