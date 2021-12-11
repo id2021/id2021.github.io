@@ -4,51 +4,7 @@
 	<meta charset="utf-8">
 	<title>web_page_making</title>
 	<link rel="stylesheet" type="text/css" href="CSS/index.css">
-	<base target="_blank" />
-    <script type="text/javascript" src="JS/加载.js"></script>
-	<style>
-	.mu{
-		    width: 0;
-		    height: 0;
-		    overflow: hidden;
-		}
-        .black_overlay{ 
-            display: none; 
-            position: fixed; 
-            top: 0%; 
-            left: 0%; 
-            width: 100%; 
-            height: 100%; 
-            background-color: black; 
-            z-index:1001; 
-            -moz-opacity: 0.8; 
-            opacity:.80; 
-            filter: alpha(opacity=88); 
-        } 
-        .white_content { 
-            display: none; 
-            position: fixed; 
-            top: 15%; 
-            left: 20%; 
-            width: 55%; 
-            height: 55%; 
-            padding: 20px; 
-            border: 10px solid orange; 
-            background-color: white; 
-            z-index:1002; 
-            overflow: auto; 
-        }
-        .wyybgm{
-            position: fixed;
-            left: 20px;
-            bottom: 40px;
-            height: 40px;
-            width: 40px;
-            text-align: center;
-            
-            
-        }
-	</style>
+    <base target="_blank" />
     <script type="text/javascript" src="https://www.w3school.com.cn/jquery/jquery.js"></script>
     <!-- 引入jquery  -->
     <script type="text/javascript">
@@ -56,18 +12,22 @@
           $('#spinner').fadeOut(3000);
           // bgc3秒消失
         })
- 
+
     </script>
     
 </head>
 <body class="body">
+
     <div id="spinner">
-    <!--页面加载动画内容-->
-	    <h1 style="text-align: center;margin-top: 80px;">页面加载中......</h1>
+    <!--动画内容-->
+    <h1 style="text-align: center;margin-top: 80px;">页面加载中......</h1>
     </div>
-<!--    <div class="mu">
+<!--     
+    <div class="music">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27901832&auto=1&height=66"></iframe>
-    </div> -->
+    </div> 
+    背景音乐
+-->
     <div class="main_nav">
         <!-- 一级导航栏 -->
         <div class="nav">
@@ -143,7 +103,7 @@
             </div>
             <!-- blog主页heQQ联系 -->
             <div class="meBox-Button">
-                <a href="https://id2021.github.io/" target="_blank" rel="noopener">首页</a>
+                <a href="https://id2021.github.io/sy8/index.html">更多</a>
                 <a href="mailto:1850236642@qq.com">QQ联系</a>
             </div>
         </div>
@@ -207,15 +167,15 @@
                     <span style="color: rgb(39, 39, 39);">cat ./这个页面的由来.txt</span>
                     <br />
                     <p>- 网页制作与设计的大作业</p>
-                    <p>- 导航栏是模仿<a href="https://pvp.qq.com/" rel="noopener">王者荣耀官网</a>导航栏写的，虽然查起来不怎么像</p>
+                    <p>- 导航栏是模仿<a href="https://pvp.qq.com/">王者荣耀官网</a>导航栏写的，虽然查起来不怎么像</p>
                     <p>- 你现在看到的这两个窗口，有点Linux的风格</p>
                     <span style="color: rgb(0, 190, 0);">[root@kk ~]</span>
                     <span style="color: blue;">#</span>
                     <span style="color: rgb(39, 39, 39);">./links.sh</span>
                     <p>我的站点：</p>
                     <ul class="ul">
-                        <li><a href="https://id2021.github.io/" target="_blank" rel="noopener">Blog博客</a></li>
-                        <li><a href="https://id2021.github.io/" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://namic00.github.io/">Blog博客</a></li>
+                        <li><a href="https://github.com/id2021.github.io/" >GitHub</a></li>
                     </ul>
                     <span style="color: rgb(0, 190, 0);">[root@kk ~]</span>
                     <span style="color: blue;">#</span>
@@ -231,6 +191,9 @@
         <!-- 清除浮动 -->
         <div style="clear:both"></div>
     </div> 
+
+
+    <!-- 说说 -->
     <div id="box3">
         <div class="Talkandcomment">
             <script type="text/javascript" src="https://unpkg.com/artitalk">
@@ -245,15 +208,23 @@
         </div>
     </div>
 
-	
-	 <div class="wyybgm"><p><a target="_self" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img style="width:100%" src="wyy.png"></a></p>
+
+    <!-- 网易云 -->
+    <div>
+        <div class="wyybgm">
+            <p>
+                <a target="_self" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                    <img style="width:100%" src="https://pic.imgdb.cn/item/61b4bc3d2ab3f51d91214fd7.png">
+                </a>
+            </p>
         </div>
-         
+             
         <div id="light" class="white_content">
-        <a target="_self" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a>
-        <br />
-	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=450 src="//music.163.com/outchain/player?type=0&id=5052081552&auto=1&height=430"></iframe>
+            <a target="_self" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a>
+            <br/>
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=450 src="//music.163.com/outchain/player?type=0&id=5052081552&auto=1&height=430"></iframe>
         </div> 
         <div id="fade" class="black_overlay"></div> 
+    </div>
 </body>
 </html>
