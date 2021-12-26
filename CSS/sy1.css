@@ -4,6 +4,10 @@
 		text-align: center;
 		background: blueviolet;
 		color: white;
+        width: 600px;
+        height: 400px;
+        margin: 100px auto;
+
 	}
 
 /*bgc渐变*/

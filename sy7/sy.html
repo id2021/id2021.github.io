@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="https://www.w3school.com.cn/jquery/jquery.js"></script>
-    <!-- 引入jquery  -->
-    <script type="text/javascript">
-    	setTimeout(() => {
-	     	$(function() {
-	     		//5秒后触发该函数
-	          	$('#spinner').fadeOut(1500);
-	          	// #spinner1.5秒消失
-	        })
-    	}, 5000);
-    </script>
-    <style type="text/css">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="https://www.w3school.com.cn/jquery/jquery.js"></script>
+	    <!-- 引入jquery  -->
+	    <script type="text/javascript">
+	    	setTimeout(() => {
+		     	$(function() {
+		     		//5秒后触发该函数
+		          	$('#spinner').fadeOut(1500);
+		          	// #spinner加载gif 1.5秒消失
+		        })
+	    	}, 5000);
+
+	    </script>
+	    <style type="text/css">
     	#spinner {
 			position: fixed;
 			z-index: max;
@@ -24,19 +25,74 @@
 			margin: 0;
 			padding: 0;
 			}
-    </style>
-	<title></title>
-</head>
-<body>
-	<div id="spinner">
-		<h1 style="text-align :center;color: skyblue;font-family: 宋体;">欢迎来的JS的世界</h1>
-	</div>
-	<p>用JS做的一些东西</p>
-	<ul>
-    	<li><a href="02.html">电灯开关</a></li>
-    	<li><a href="03.html">计算器</a></li>
-        <li><a href="01.html">do you love me ?</a></li>
-        <li><a href="04.html">轮播图</a></li>
-    </ul>
-</body>
+    	</style>
+		<style type="text/css">
+			#rightMenu
+			{
+				list-style: none;
+				background: gainsboro;
+				border: solid 1px skyblue;
+				margin: 0px;
+				padding: 5px;
+				position: absolute;
+				top: 0px;
+				display: none;
+			}
+			#rightMenu li
+			{
+				border-bottom: solid 1px skyblue;
+			}
+			a{
+				text-decoration: none;
+				color: hotpink;
+			}
+			p{
+				margin-top: 120px;
+				text-align: center;
+				color: hotpink;
+				font-family: "宋体";
+				font-size: 20px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="spinner">
+			<h1 style="text-align :center;color: skyblue;font-family: 宋体;">欢迎来的JS的世界</h1>
+		</div>
+		<p>奇怪，难道这里什么都没有？要不试试右键检查一下</p>
+		<ul id="rightMenu" style="width: 200px;">
+			<li><a href="02.html">电灯开关</a></li>
+			<li><a href="03.html">计算器</a></li>
+			<li><a href="01.html">do you love me ?</a></li>
+			<li><a href="04.html">轮播图</a></li>
+		</ul>
+		<script type="text/javascript">
+			var rm=document.getElementById("rightMenu");
+			document.documentElement.oncontextmenu=function (e) {
+				e=e || window.event;
+				var mx=e.clientX;
+				var my=e.clientY;
+				var rmWidth=parseInt(rm.style.width);
+				var pageWidth=document.documentElement.clientWidth;
+				if((mx+rmWidth)<pageWidth)
+				{
+					rm.style.left=mx+"px";
+				    rm.style.top=my+"px";
+				}
+				else
+				{
+					rm.style.right=mx+"px";
+				    rm.style.top=my+"px";
+				}
+				rm.style.display="block";
+				return false;
+			};
+			document.documentElement.onclick=function () {
+				rm.style.display="none";
+			}
+      
+      </script>
+		</script>
+	</body>
 </html>
