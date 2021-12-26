@@ -4,7 +4,22 @@
     height: 0;
     overflow: hidden;
 }
+@media screen and (max-width: 1200px)
+{
+    iframe{
+    height: 260px;
+    width: 390px;
+    }
 
+}
+@media screen and (max-width: 1000px)
+{
+    iframe{
+    height: 240px;
+    width: 360px;
+    }
+
+}
 /* 0 - 全局
 -------------------------------- */
 
@@ -108,10 +123,10 @@ main section{
     }
 }
 
-#info{ background: url(https://s2.loli.net/2021/12/09/LrTdoYpMVfqSetW.jpg);/*url(../img/bg2.jpg)*/ fixed; }
+#info{ background: url(https://pic.imgdb.cn/item/61b34bb42ab3f51d9187f03d.jpg);/*url(../img/bg2.jpg)*/ fixed; }
 #skills{ background: #f8bd24; }
-#works{ background: url(https://s2.loli.net/2021/12/09/rZWoy2UwQaPTzKF.jpg);/*url(../img/bg1.jpeg)*/ fixed; }
-#team{ background: url(https://s2.loli.net/2021/12/09/nhcVMHqOR5lv2Er.jpg);/*url(../img/bg3.jpg)*/ fixed; }
+#works{ background: url(https://pic.imgdb.cn/item/61b34bca2ab3f51d9187fb6a.jpg);/*url(../img/bg1.jpeg)*/ fixed; }
+#team{ background: url(https://pic.imgdb.cn/item/61b34bde2ab3f51d918806cb.jpg);/*url(../img/bg3.jpg)*/ fixed; }
 
 .title{
     margin-bottom: 1em;
