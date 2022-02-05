@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head><title>To 邹泽林</title></head>
+<head>
+	<title>To 邹泽林</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://about19.oss-cn-hangzhou.aliyuncs.com/cel/yx/jquery.fireworks.js"></script>
+	<script>
+		// 你好无聊，我彩蛋白写了，就这样被你发现了
+	    var myWords = '哈哈哈哈，没想到你居然在这里停留了一分钟，超开心(记得告诉我呀)。';
+	    var x = 0;
+	    var speed = 150;
+	    var current = 0;
+	    function typeWrite(){
+	        $('.type_words').html(myWords.substring(0, x++)+'_');
+	        var timer = setTimeout("typeWrite()", speed);
+	        if (x == myWords.length) {
+	            x = myWords.length;
+	            clearTimeout(timer)
+	        }
+	    }
+    </script>
+</head>
 <body>
 	<div class="firework-container" >
 		<header>
-			<h1 style = "text-align:center;margin: 100px;color: ;">凯哥祝你元宵节快乐😁</h1>
+			<h1 style = "text-align:center;margin-top: 100px;color: skyblue;font-family: 宋体;">凯哥祝你元宵节快乐😁</h1>
 		</header>
+		<div class="type_words" style = "text-align:center;color: skyblue;font-family: 宋体;margin: 0px auto;width:250px;"></div>
 	</div>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://about19.oss-cn-hangzhou.aliyuncs.com/cel/yx/jquery.fireworks.js"></script>
+    
+
 	<script type="text/javascript">
 		$('.firework-container').fireworks({ 
 		  sound: false, // sound effect
-		  opacity: 0.8, 
+		  opacity: 0.75, 
 		  width: '100%', 
 		  height: '100%' 
 		});
+		setTimeout(typeWrite,6000) 
 	</script>
 	<script>
 		var _hmt = _hmt || [];
