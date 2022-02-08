@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>与kk聊天中...</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="all" href="styles/setup.css" />
+        <link rel="stylesheet" media="all" href="styles/says.css" />
+        <link rel="stylesheet" media="all" href="styles/reply.css" />
+        <link rel="stylesheet" media="all" href="styles/typing.css" />
+        <link rel="stylesheet" media="all" href="styles/input.css" />
+        <style>
+            body {
+                background: #dcdde0;
+            }
+
+            .bubble-container {
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="chat"></div>
+        <script src="https://about19.oss-cn-hangzhou.aliyuncs.com/cel/yx/bubble.js"></script>
+    <script>
+        var convo = {
+            ice: {
+                says: [
+                    "你好呀！",
+                    "<img src=https://pic.imgdb.cn/item/61d837e62ab3f51d913df643.gif />",
+                    "今天是元宵节"
+                    ],
+                reply: [
+                    {
+                        question: "然后呢？", 
+                        answer: "chattwo" //you
+                    }
+                    ]
+            },
+            "chattwo":{
+                says:[
+                "当然是元宵节快乐呀",
+                "<img src=https://about19.oss-cn-hangzhou.aliyuncs.com/cel/yx/QQ4932.jpg />",
+                "想猜灯谜和看烟花吗？😀"
+                ],
+                reply: [
+                    {
+                        question: "没兴趣", 
+                        answer: "chatthree" 
+                    },
+                    {
+                        question: "好呀",
+                        answer: "dm_yh" //you
+                    }
+                    ]
+            },
+            "dm_yh":{
+                says:[
+                "好的",
+                "那我们是先猜灯谜还是先看烟花呢？"
+                ],
+                reply:[
+                    {
+                        question: "猜灯谜", 
+                        answer: "dm" //you
+                    },
+                    {
+                        question: "看烟花",
+                        answer: "yh" //you
+                    }
+                ]
+            },
+            "yh":{
+                says:[
+                "好，既然你选了烟花",
+                "那我们猜灯谜吧",
+                "",
+                "准备好了吗？"
+                ],
+                reply:[
+                    {
+                        question: "来",
+                        answer: "dm" //you
+                    }
+                ]
+            },
+            "dm":{
+                says:[
+                "那开始吧，先来一个简单的",
+                "一片草原",
+                "猜一植物"
+                ],
+                reply:[
+                    {
+                        question: "给点提示", 
+                        answer: "tishi1" //you
+                    },
+                    {
+                        question: "查看答案",
+                        answer: "daan1" //you
+                    }
+                ]
+            },
+            "tishi1":{
+                says:[
+                "这个谜底是谐音啦",
+                "再适当联想一下"
+                ],
+                reply:[
+                    {
+                        question: "查看答案",
+                        answer: "daan1" //you
+                    }
+                ]
+            },
+            "daan1": {
+                says:[
+                "梅(没)花",
+                "<img src=https://pic.imgdb.cn/item/61a822ed2ab3f51d9143cf22.png>"
+                ],
+                reply:[
+                    {
+                        question: "梅花也算植物？",
+                        answer: "meihau" //you
+                    },
+                    {
+                        question: "再来一题",
+                        answer: "next" //you
+                    }
+                ]
+            },
+            "meihau": {
+                says:[
+                "梅花是一种植物的名称,它开的花也叫梅花",
+                "其实我觉得叫梅树更合理",
+                "梅花又名春梅、干枝梅等,是蔷薇科杏属植物,花语是凌霜斗雪，迎春开放，坚强、高雅、风骨俊傲"
+                ],
+                reply:[
+                    {
+                        question: "我不服，再来一个",
+                        answer: "next" //you
+                    }
+                ]
+            },
+            "next":{
+                says:[
+                "然后来了一群羊",
+                "猜一水果",
+                "提示：要联系上一个谜语"
+                ],
+                reply:[
+                    {
+                        question: "答案是？",
+                        answer: "daan2" //you
+                    }
+                ]
+            },
+            "daan2":{
+                says:[
+                "😜",
+                "是草莓(没)",
+                "哈哈哈，要不要继续"
+                ],
+                reply:[
+                    {
+                        question: "没意思，不玩了",
+                        answer: "yanhua" //you
+                    },
+                    {
+                        question: "有没有正常一点的灯谜？",
+                        answer: "meiyou" //you
+                    }
+                ]
+            },
+            "meiyou":{
+                says:[
+                "本来应该有的",
+                "但是我突然不想写了,所以只有这两个不正经",
+                "还是直接带你看烟花吧←_←"
+                ],
+                reply:[
+                {
+                    question: "那好吧",
+                    answer: "externalResourceFunction"//you
+                }]
+            },
+            "yanhua":{
+                says:[
+                "<img src=https://about19.oss-cn-hangzhou.aliyuncs.com/cel/yx/QQ5009.jpg />",
+                "既然这样，那去看烟花"
+                ],
+                reply:[
+                {
+                    question: "再给你一次机会",
+                    answer: "externalResourceFunction"//you
+                }]
+            },
+            "end":{
+                says:[
+                "喜欢的话，可以问我要烟花的地址",
+                "第一次使用这种方式，不知道效果如何，可以跟我反馈一下有什么感受",
+                "最后，感谢你能看到这里！",
+                "元宵节快乐，再见！"
+                ],
+                reply:[
+                {
+                    question: "再见",
+                    answer: ""
+                },
+                {
+                    question: "时光回溯",
+                    answer: "chatone"//you
+                }]
+            },
+            "chatthree": {
+                says:[
+                "那好吧，再见",
+                "元宵节快乐"
+                ],
+                reply:[
+                {
+                    question: "再见",
+                    answer: "fadeoutya"
+                }]
+            }
+    }
+
+var chatWindow = new Bubbles(
+  document.getElementById("chat"), 
+  "chatWindow" 
+)
+
+chatWindow.talk(
+  convo
+)
+
+externalResourceFunction = function() {
+  chatWindow.talk(convo, "end")
+
+  window.open(
+    "https://id2021.github.io/22/yx/pyjr.html",
+    "_blank",
+    "toolbar=no,scrollbars=no,menubar=no,resizable=no,location=no,titlebar=no,width=300,height=600"
+  )
+}
+fadeoutya = function(){
+    document.body.innerHTML = "";
+}
+    </script>
+  </body>
+</html>
